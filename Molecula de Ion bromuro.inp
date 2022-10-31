@@ -1,0 +1,40 @@
+!
+!   GAMESS Calculation input file
+!   
+!
+ $CONTRL SCFTYP=UHF MAXIT=200 RUNTYP=OPTIMIZE
+         COORD=UNIQUE MULT=2 
+         ICHARG=0  
+         MOLPLT=.FALSE. PLTORB=.FALSE.  $END
+ $SYSTEM TIMLIM=2879 MWORDS=250  $END
+
+ $STATPT OPTTOL=0.0005 NSTEP=999 $END
+ $STATPT IHREP=0  $END
+
+ $BASIS  GBASIS=N31 NGAUSS=6
+         NDFUNC=1   NPFUNC=0  $END
+
+ $SCF    DIRSCF=.T. $END
+ $GUESS  GUESS=HUCKEL  $END
+
+ $DATA
+   
+  C1
+C     6.0    -0.43727    -0.65295    -0.82693
+C     6.0     0.01596     0.76756    -0.84212
+C     6.0    -1.06567     1.61941    -0.25330
+C     6.0    -2.31288     0.73687    -0.30426
+C     6.0    -1.81145    -0.70664    -0.23559
+Br   35.0     0.99034    -0.31149     0.42074
+H     1.0    -0.14610    -1.39581    -1.55993
+H     1.0     0.67257     1.18723    -1.59447
+H     1.0    -1.21956     2.52379    -0.85152
+H     1.0    -0.85644     1.95322     0.77038
+H     1.0    -2.82780     0.89519    -1.25918
+H     1.0    -3.02944     0.97269     0.48871
+H     1.0    -2.46344    -1.35776    -0.82693
+H     1.0    -1.83465    -1.08904     0.79228
+ $END
+
+
+! Customizations after this line are persisted when using Do More Calculations
